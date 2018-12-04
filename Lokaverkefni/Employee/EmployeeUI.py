@@ -11,7 +11,7 @@ def car_Page():
     print('-'*50)
     print("{0:>26}".format('Cars'))
     print('-'*50)
-    print("Press - 1 to Mark car as available for rent \nPress - 2 to Mark car as rented \nPress - 3 to Make Order \nPress - 4 to Cancel Order Press\nPress - 5 to Search for Order \nPress - 6 to Change Order\nPress - 7 for Cars Status\nPress - 8 for Price list\nPress q to Quit ")
+    print("Press - 1 to Mark car as available for rent \nPress - 2 to Mark car as rented \nPress - 3 to Make Order \nPress - 4 to Cancel Order Press\nPress - 5 to Search for Order \nPress - 6 to Change Order\nPress - 7 for Car Status\nPress - 8 for Price list\nPress q to Quit ")
 
 
 def customers_Page():
@@ -27,13 +27,17 @@ def main():
     choice = ''
     front_Page()
     while choice != 'q':
-        choice = input("")
-        if choice == "1":
+        choice = input('')
+        if choice == '1':
             car_Page()
-            choice = input("")
-            if
-        elif choice == "2":
+        elif choice == '2':
             customers_Page()
+        elif choice == 'b':
+            front_Page()
+        elif choice == 'q':
+            print('Goodbye!')
+        else:
+            print('Invalid option - Try again!')
 
 
 main()
